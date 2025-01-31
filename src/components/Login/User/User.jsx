@@ -1,20 +1,17 @@
 import React from "react";
 import "./User.css";
 import { useState } from "react";
-import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 const User = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const auth = () => {
     if (username === "abc" && password === "123") {
-      toast.success("success", {
-        duration: 165565000,
-      });
+      alert("success");
     } else {
-      toast.warn("invalid", {
-        duration: 1551500,
-      });
+      alert("invalid");
     }
   };
   return (
@@ -26,34 +23,46 @@ const User = () => {
         fontFamily: "mars",
       }}
     >
-      <h1>User Login</h1>
+      <button
+        className="login-back-btn"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Go Back
+      </button>
+      <h1 style={{ position: "fixed", top: "9.7rem", left: "37rem" }}>
+        User Login
+      </h1>
       <form action="" className="form">
         <div className="login">
           <label htmlFor="">Username &nbsp;</label>
           <input
             type="text"
             placeholder="Username"
-            style={{ height: "1.8rem" }}
+            style={{ height: "1.8rem", padding: "1rem", fontSize: "1rem" }}
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          <br /> <br />
+          <br /> <br /> <br />
           <label htmlFor="">Password &nbsp;</label>
           <input
             type="password"
             placeholder="Password"
-            style={{ height: "1.8rem" }}
+            style={{ height: "1.8rem", padding: "1rem", fontSize: "1rem" }}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <br /> <br />
           <button
+            className="login-btn"
             onClick={auth}
             style={{
               position: "relative",
-              left: "4.3rem",
-              width: "4.5rem",
-              height: "1.8rem",
+              left: "1rem",
+              width: "5.5rem",
+              height: "2rem",
+              top: "1.8rem",
             }}
           >
             Login

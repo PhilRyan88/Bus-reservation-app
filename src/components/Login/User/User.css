@@ -4,9 +4,42 @@
   box-sizing: border-box;
 }
 .form {
-  border: 1px solid;
-  height: 10rem;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.619);
+  height: 16rem;
+  width: 35rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  left: 32rem;
+
+  top: 13rem;
+  border-radius: 90px;
+}
+.form .login input {
+  outline: none;
+}
+.login-btn {
+  background-color: chartreuse;
+  border-style: none;
+  transition: box-shadow 0.2s ease;
+  &:hover {
+    box-shadow: 0px 0px 10px greenyellow;
+    cursor: pointer;
+  }
+}
+.login-back-btn {
+  background-color: rgb(242, 55, 55);
+  border-style: none;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+  width: 5.5rem;
+  height: 2rem;
+  position: relative;
+  top: 1rem;
+  right: 42rem;
+  &:hover {
+    box-shadow: 0px 0px 10px rgb(242, 55, 55);
+    cursor: pointer;
+  }
 }
