@@ -3,16 +3,19 @@ import "./Admin.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import vid from "../../../Assets/vid.webm";
+import data from "../../../Database/listOfAdmins.json";
 const Admin = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const auth = () => {
-    if (username === "abc" && password === "123") {
-      alert("success");
+    const foundAdmin = data.admins.find((elem) => elem.name === username);
+
+    if (foundAdmin) {
+      alert("Login successful");
     } else {
-      alert("invalid");
+      alert("Sign up first");
     }
   };
   return (
@@ -74,6 +77,13 @@ const Admin = () => {
             }}
           >
             Login
+          </button>
+          <button
+            onClick={() => {
+              navigate("/SignUp");
+            }}
+          >
+            Sign Up
           </button>
         </div>
       </form>

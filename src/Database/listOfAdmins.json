@@ -1,0 +1,28 @@
+{
+  "admins": [
+    {
+      "id": "c9ed",
+      "name": "adsad",
+      "email": "adsa",
+      "password": "adsa"
+    },
+    {
+      "id": "f951",
+      "name": "aditya",
+      "email": "adi",
+      "password": "123"
+    },
+    {
+      "id": "921f",
+      "name": "sooraj",
+      "email": "sooraj",
+      "password": "123"
+    },
+    {
+      "id": "0993",
+      "name": "sooraj",
+      "email": "sooraj",
+      "password": "123"
+    }
+  ]
+}
