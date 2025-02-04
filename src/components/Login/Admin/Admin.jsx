@@ -1,17 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Admin.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import vid from "../../../Assets/vid.webm";
-import data from "../../../Database/listOfAdmins.json";
+// import data from "../../../Database/listOfAdmins.json";
+import axios from "axios";
 const Admin = () => {
+  const [user, setUser] = useState([]);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  useEffect(() => {
+    userData();
+  }, []);
+
+  async function userData() {
+    try {
+      await axios.get("http://localhost:5000/admins").then((elem) => {
+        console.log(elem);
+        setUser(elem.data);
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }
 
   const auth = () => {
-    const foundAdmin = data.admins.find((elem) => elem.name === username);
-
+    const foundAdmin = user.find(
+      (elem) => elem.name === username && elem.password === password
+    );
     if (foundAdmin) {
       alert("Login successful");
     } else {

@@ -1,28 +1,22 @@
 {
   "admins": [
     {
-      "id": "c9ed",
-      "name": "adsad",
-      "email": "adsa",
-      "password": "adsa"
+      "id": "6a9c",
+      "name": "aditya",
+      "email": "sbjbas",
+      "password": "123"
     },
     {
-      "id": "f951",
+      "id": "cd37",
+      "name": "sam",
+      "email": "sam",
+      "password": "123"
+    },
+    {
+      "id": "0373",
       "name": "aditya",
       "email": "adi",
-      "password": "123"
-    },
-    {
-      "id": "921f",
-      "name": "sooraj",
-      "email": "sooraj",
-      "password": "123"
-    },
-    {
-      "id": "0993",
-      "name": "sooraj",
-      "email": "sooraj",
-      "password": "123"
+      "password": "aditya"
     }
   ]
 }
