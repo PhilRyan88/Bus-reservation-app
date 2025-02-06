@@ -1,0 +1,10 @@
+.AdminHome {
+  background-color: black;
+  height: 100vh;
+}
+.dash-vid {
+  position: fixed;
+  width: 40rem;
+  left: 0rem;
+  bottom: 8rem;
+}
