@@ -31,6 +31,7 @@ const Admin = () => {
     );
     if (foundAdmin) {
       alert("Login successful");
+      navigate("/AdminHome");
     } else {
       alert("Sign up first");
     }
@@ -96,6 +97,14 @@ const Admin = () => {
             Login
           </button>
           <button
+            style={{
+              position: "relative",
+              left: "rem",
+              width: "5.5rem",
+              height: "2rem",
+              top: "1.8rem",
+            }}
+            className="login-btn"
             onClick={() => {
               navigate("/SignUp");
             }}
