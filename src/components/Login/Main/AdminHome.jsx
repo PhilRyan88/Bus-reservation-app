@@ -5,6 +5,7 @@ import "./styles/AdminHome.css";
 import vid from "../../../Assets/vid3.webm";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
+import AddBus from "./components/AddBus";
 const AdminHome = () => {
   return (
     <div className="AdminHome">
@@ -21,7 +22,7 @@ const AdminHome = () => {
 
       <Routes>
         <Route path="/Dashboard" element={<Dashboard />} />
-        {/* <Route path="/Dashboard" element={</>}/> */}
+        <Route path="/AddBus" element={<AddBus />} />
       </Routes>
     </div>
   );
