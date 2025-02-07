@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import "./styles/AdminHome.css";
 import vid from "../../../Assets/vid3.webm";
+import { Route, Routes } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
 const AdminHome = () => {
   return (
     <div className="AdminHome">
@@ -16,6 +18,11 @@ const AdminHome = () => {
       ></video>
       <Header />
       <Sidebar />
+
+      <Routes>
+        <Route path="/Dashboard" element={<Dashboard />} />
+        {/* <Route path="/Dashboard" element={</>}/> */}
+      </Routes>
     </div>
   );
 };

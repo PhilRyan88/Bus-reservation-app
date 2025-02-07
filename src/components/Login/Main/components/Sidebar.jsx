@@ -12,14 +12,16 @@ const Sidebar = () => {
           activeLink === "Dashboard" ? "active-link" : "not-active-link"
         }
         onClick={() => setActiveLink("Dashboard")}
+        to="/AdminHome/Dashboard"
       >
         Dashboard
       </NavLink>
       <NavLink
-        className={activeLink === "About" ? "active-link" : "not-active-link"}
-        onClick={() => setActiveLink("About")}
+        className={activeLink === "Add Bus" ? "active-link" : "not-active-link"}
+        onClick={() => setActiveLink("Add Bus")}
+        to="/AdminHome/AddBus"
       >
-        About
+        Add Bus
       </NavLink>
       <NavLink
         className={activeLink === "Contact" ? "active-link" : "not-active-link"}
