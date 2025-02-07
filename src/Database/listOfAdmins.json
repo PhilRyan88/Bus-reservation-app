@@ -18,5 +18,25 @@
       "email": "adi",
       "password": "aditya"
     }
+  ],
+  "buses": [
+    {
+      "id": "6b84",
+      "name": "Kallada",
+      "from": "Bangalore",
+      "to": "Kayamkulam",
+      "departure": "11:33",
+      "arrival": "14:36",
+      "seats": "50"
+    },
+    {
+      "id": "9dad",
+      "name": "aditya",
+      "from": "adsa",
+      "to": "asdas",
+      "departure": "11:34",
+      "arrival": "11:38",
+      "seats": "12"
+    }
   ]
 }
