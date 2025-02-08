@@ -19,24 +19,74 @@
       "password": "aditya"
     }
   ],
+  "users": [
+    {
+      "id": "d1a3",
+      "name": "adi",
+      "email": "adithyasrk5@gmail.com",
+      "password": "123"
+    }
+  ],
   "buses": [
     {
-      "id": "6b84",
+      "id": "1a1f",
+      "image": "https://static.vecteezy.com/system/resources/previews/011/460/594/original/american-yellow-school-bus-front-view-cartoon-funny-back-to-school-free-vector.jpg",
       "name": "Kallada",
       "from": "Bangalore",
       "to": "Kayamkulam",
-      "departure": "11:33",
-      "arrival": "14:36",
+      "departure": "17:07",
+      "arrival": "21:05",
       "seats": "50"
     },
     {
-      "id": "9dad",
-      "name": "aditya",
-      "from": "adsa",
-      "to": "asdas",
-      "departure": "11:34",
-      "arrival": "11:38",
-      "seats": "12"
+      "id": "95b1",
+      "image": "https://www.pinclipart.com/picdir/big/524-5245248_cartoon-bus-png-animated-school-bus-png-clipart.png",
+      "name": "Krish",
+      "from": "Kayamkulam",
+      "to": "Bangalore",
+      "departure": "20:06",
+      "arrival": "17:08",
+      "seats": "25"
+    },
+    {
+      "id": "894e",
+      "image": "https://th.bing.com/th/id/R.89a16d2424875db3ccf9fa3c20d9c489?rik=DPrC1EG6DvBiyA&riu=http%3a%2f%2fwww.vectorfree.com%2fmedia%2fvectors%2fkids-cartoon-school-bus.jpg&ehk=QoovJC3vzmRP2OqO0am28nlTm7qJThkA19Sxyv4nW%2fM%3d&risl=&pid=ImgRaw&r=0",
+      "name": "Ksrtc",
+      "from": "Chennai",
+      "to": "Bangalore",
+      "departure": "22:48",
+      "arrival": "22:48",
+      "seats": "50"
+    },
+    {
+      "id": "6068",
+      "image": "https://www.wikihow.com/images/7/72/Draw-a-Bus-Step-5.jpg",
+      "name": "Harish",
+      "from": "Kolkata",
+      "to": "Chennai",
+      "departure": "20:49",
+      "arrival": "17:52",
+      "seats": "50"
+    },
+    {
+      "id": "99e0",
+      "image": "https://png.pngtree.com/png-clipart/20230914/original/pngtree-tour-bus-vector-png-image_11243714.png",
+      "name": "Dell",
+      "from": "Kerala",
+      "to": "Kashmir",
+      "departure": "22:49",
+      "arrival": "22:49",
+      "seats": "35"
+    },
+    {
+      "id": "8997",
+      "image": "https://cdn.pixabay.com/photo/2014/04/02/10/41/bus-304248_1280.png",
+      "name": "React",
+      "from": "Thrissur",
+      "to": "Mumbai",
+      "departure": "22:51",
+      "arrival": "23:51",
+      "seats": "50"
     }
   ]
 }

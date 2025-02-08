@@ -1,19 +1,39 @@
 import React from "react";
 import "./User.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const User = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [user, setUser] = useState([]);
   const navigate = useNavigate();
+  useEffect(() => {
+    getData();
+  });
 
+  async function getData() {
+    try {
+      axios.get("http://localhost:5000/users").then((elem) => {
+        setUser(elem.data);
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
+  const foundUser = user.find(
+    (elem) => elem.name === username && elem.password === password
+  );
   const auth = () => {
-    if (username === "abc" && password === "123") {
-      alert("success");
+    if (foundUser) {
+      alert("Login Successful");
+      navigate("/UserHome");
     } else {
-      alert("invalid");
+      alert("Invalid");
     }
   };
+
   return (
     <div
       style={{
@@ -66,6 +86,19 @@ const User = () => {
             }}
           >
             Login
+          </button>
+          <button
+            className="login-btn"
+            onClick={() => navigate("/UserSignup")}
+            style={{
+              position: "relative",
+              left: "2rem",
+              width: "5.5rem",
+              height: "2rem",
+              top: "1.8rem",
+            }}
+          >
+            Signup
           </button>
         </div>
       </form>

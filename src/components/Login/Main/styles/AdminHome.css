@@ -11,7 +11,10 @@
 .Dashboard-parent {
   position: relative;
   bottom: 40rem;
+
   color: white;
+
+  overflow-y: scroll;
 }
 .Add-Bus {
   position: relative;
@@ -48,4 +51,39 @@
   box-shadow: 0px 0px 1rem greenyellow;
   cursor: pointer;
   color: black;
+}
+.bus-img {
+  height: 70px;
+}
+.table-data {
+  position: relative;
+  left: 14rem;
+}
+.dash {
+  position: relative;
+  top: 5rem;
+  left: 22rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 12px;
+
+  border: 0.5px solid rgba(255, 255, 255, 0.342);
+  border-style: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.dash th,
+.dash td {
+  padding: 0.2rem;
+}
+.view-bus {
+  position: relative;
+  bottom: 30rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+.view-bus img {
+  height: 10rem;
 }
