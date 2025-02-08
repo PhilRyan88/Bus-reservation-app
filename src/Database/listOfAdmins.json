@@ -29,16 +29,6 @@
   ],
   "buses": [
     {
-      "id": "1a1f",
-      "image": "https://static.vecteezy.com/system/resources/previews/011/460/594/original/american-yellow-school-bus-front-view-cartoon-funny-back-to-school-free-vector.jpg",
-      "name": "Kallada",
-      "from": "Bangalore",
-      "to": "Kayamkulam",
-      "departure": "17:07",
-      "arrival": "21:05",
-      "seats": "50"
-    },
-    {
       "id": "95b1",
       "image": "https://www.pinclipart.com/picdir/big/524-5245248_cartoon-bus-png-animated-school-bus-png-clipart.png",
       "name": "Krish",
@@ -56,16 +46,6 @@
       "to": "Bangalore",
       "departure": "22:48",
       "arrival": "22:48",
-      "seats": "50"
-    },
-    {
-      "id": "6068",
-      "image": "https://www.wikihow.com/images/7/72/Draw-a-Bus-Step-5.jpg",
-      "name": "Harish",
-      "from": "Kolkata",
-      "to": "Chennai",
-      "departure": "20:49",
-      "arrival": "17:52",
       "seats": "50"
     },
     {

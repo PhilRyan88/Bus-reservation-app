@@ -87,3 +87,27 @@
 .view-bus img {
   height: 10rem;
 }
+.edit-bus {
+  position: relative;
+  bottom: 30rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.edit-bus img {
+  height: 100px;
+  display: flex;
+}
+.table-edit {
+  padding: 10px;
+  position: relative;
+  left: 50px;
+  bottom: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.214));
+  backdrop-filter: blur(1px);
+  border-radius: 12px;
+
+  border: 0.5px solid rgba(255, 255, 255, 0.342);
+  border-style: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
