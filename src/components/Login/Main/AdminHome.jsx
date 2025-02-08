@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from "./AdminComponents/Dashboard";
 import AddBus from "./AdminComponents/AddBus";
 import ViewBus from "./AdminComponents/ViewBus";
+import EditBus from "./AdminComponents/EditBus";
 const AdminHome = () => {
   return (
     <div className="AdminHome">
@@ -25,6 +26,7 @@ const AdminHome = () => {
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/AddBus" element={<AddBus />} />
         <Route path="/ViewBus/:id" element={<ViewBus />} />
+        <Route path="/EditBus/:id" element={<EditBus />} />
       </Routes>
     </div>
   );

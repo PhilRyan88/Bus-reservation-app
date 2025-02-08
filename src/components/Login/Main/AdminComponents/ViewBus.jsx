@@ -11,6 +11,7 @@ const ViewBus = () => {
     <div className="view-bus">
       {<img src={bus.image} alt="" />}
       <b>{bus.name}</b>
+      <p>Available Seats : {bus.seats}</p>
     </div>
   );
 };
