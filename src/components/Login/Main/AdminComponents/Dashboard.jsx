@@ -23,7 +23,7 @@ const Dashboard = () => {
   // console.log(location);
   return (
     <div className="Dashboard-parent">
-      <table className="dash" border="0" cellSpacing="5px">
+      <table className="dash" border="0" cellSpacing="7px">
         <tbody>
           <tr>
             <th>ID</th>
