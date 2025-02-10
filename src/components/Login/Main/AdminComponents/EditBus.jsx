@@ -1,25 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/AdminHome.css";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
+
 const EditBus = () => {
   const location = useLocation();
-  const bus = location.state;
-  useEffect(() => {
-    deleteData();
-  }, []);
-  async function deleteData() {
+  const [bus, setBus] = useState(location.state);
+
+  const deleteData = async () => {
     try {
-      await axios
-        .delete(`http://localhost:5000/buses/${bus.id}`)
-        .then((elem) => {
-          console.log(elem);
-        });
+      await axios.delete(`http://localhost:5000/buses/${bus.id}`);
+      setBus(null);
     } catch (err) {
       console.log(err);
     }
+  };
+
+  if (!bus) {
+    return <h2>Bus has been deleted.</h2>;
   }
-  console.log(bus);
+
   return (
     <div className="edit-bus">
       <table className="table-edit" cellSpacing="25px">

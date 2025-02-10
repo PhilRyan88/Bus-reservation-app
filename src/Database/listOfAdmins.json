@@ -29,44 +29,34 @@
   ],
   "buses": [
     {
-      "id": "95b1",
-      "image": "https://www.pinclipart.com/picdir/big/524-5245248_cartoon-bus-png-animated-school-bus-png-clipart.png",
+      "id": "3217",
+      "image": "https://static.vecteezy.com/system/resources/previews/011/460/594/original/american-yellow-school-bus-front-view-cartoon-funny-back-to-school-free-vector.jpg",
+      "name": "Kallada",
+      "from": "Bangalore",
+      "to": "Mumbai",
+      "departure": "15:01",
+      "arrival": "16:01",
+      "seats": "50"
+    },
+    {
+      "id": "a6d7",
+      "image": "https://img.freepik.com/premium-vector/school-bus-bus-stop_24640-79289.jpg?w=900",
       "name": "Krish",
       "from": "Kayamkulam",
-      "to": "Bangalore",
-      "departure": "20:06",
-      "arrival": "17:08",
-      "seats": "25"
-    },
-    {
-      "id": "894e",
-      "image": "https://th.bing.com/th/id/R.89a16d2424875db3ccf9fa3c20d9c489?rik=DPrC1EG6DvBiyA&riu=http%3a%2f%2fwww.vectorfree.com%2fmedia%2fvectors%2fkids-cartoon-school-bus.jpg&ehk=QoovJC3vzmRP2OqO0am28nlTm7qJThkA19Sxyv4nW%2fM%3d&risl=&pid=ImgRaw&r=0",
-      "name": "Ksrtc",
-      "from": "Chennai",
-      "to": "Bangalore",
-      "departure": "22:48",
-      "arrival": "22:48",
-      "seats": "50"
-    },
-    {
-      "id": "99e0",
-      "image": "https://png.pngtree.com/png-clipart/20230914/original/pngtree-tour-bus-vector-png-image_11243714.png",
-      "name": "Dell",
-      "from": "Kerala",
-      "to": "Kashmir",
-      "departure": "22:49",
-      "arrival": "22:49",
-      "seats": "35"
-    },
-    {
-      "id": "8997",
-      "image": "https://cdn.pixabay.com/photo/2014/04/02/10/41/bus-304248_1280.png",
-      "name": "React",
-      "from": "Thrissur",
       "to": "Mumbai",
-      "departure": "22:51",
-      "arrival": "23:51",
+      "departure": "17:02",
+      "arrival": "12:06",
       "seats": "50"
+    },
+    {
+      "id": "9885",
+      "image": "https://png.pngtree.com/background/20230319/original/pngtree-tourist-bus-3d-cartoon-background-picture-image_2151131.jpg",
+      "name": "Burger King",
+      "from": "Kolkata",
+      "to": "Chennai",
+      "departure": "16:04",
+      "arrival": "12:04",
+      "seats": "35"
     }
   ]
 }
