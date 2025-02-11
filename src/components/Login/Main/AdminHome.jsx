@@ -25,7 +25,7 @@ const AdminHome = () => {
       <Routes>
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/AddBus" element={<AddBus />} />
-        <Route path="/ViewBus/:id" element={<ViewBus />} />
+        <Route path="/viewBus/:id" element={<ViewBus />} />
         <Route path="/EditBus/:id" element={<EditBus />} />
       </Routes>
     </div>

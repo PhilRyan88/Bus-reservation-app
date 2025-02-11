@@ -1,10 +1,16 @@
 import React from "react";
+import ViewBus from "./UserComponents/ViewBus";
+import View from "./UserComponents/View";
+import { Route, Routes } from "react-router-dom";
 
 const UserHome = () => {
   return (
     <div>
       UserHome
-      <h1>This is USer</h1>
+      <ViewBus />
+      <Routes>
+        <Route path="/view:id" element={<View />} />
+      </Routes>
     </div>
   );
 };
