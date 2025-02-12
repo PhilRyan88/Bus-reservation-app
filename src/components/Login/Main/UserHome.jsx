@@ -9,7 +9,7 @@ const UserHome = () => {
       UserHome
       <ViewBus />
       <Routes>
-        <Route path="/view:id" element={<View />} />
+        <Route path="/view/:id" element={<View />} />
       </Routes>
     </div>
   );
