@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import "../styles/UserHome.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const ViewBus = () => {
   const [bus, setBus] = useState([]);
@@ -24,13 +24,12 @@ const ViewBus = () => {
         return (
           <React.Fragment key={elem.id}>
             <div className="bus-list-user">
-              <Link to={`/view/${elem.id}`} state={elem}>
+              <NavLink to={`/UserHome/view/${elem.id}`} state={elem}>
                 <span>
-                  {" "}
                   {elem.name}
                   <img src={elem.image} alt="" height="90px" />
                 </span>
-              </Link>
+              </NavLink>
             </div>
           </React.Fragment>
         );
