@@ -50,7 +50,11 @@ const Dashboard = () => {
                 <td>{elem.departure}</td>
                 <td>{elem.arrival}</td>
                 <td>{elem.seats}</td>
-
+                <td>
+                  <Link state={elem} to={`/AdminHome/ViewBus/${elem.id}`}>
+                    <button>View</button>
+                  </Link>
+                </td>
                 <td>
                   <Link state={elem} to={`/AdminHome/EditBus/${elem.id}`}>
                     <button>Edit</button>
